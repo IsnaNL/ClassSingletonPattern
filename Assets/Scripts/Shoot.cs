@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public LayerMask SphereLayerMask;
+    public ScoreHolder score;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,13 +29,16 @@ public class Shoot : MonoBehaviour
 
     private void ShootRay()
     {
+        Debug.Log("Player clicked mouse0");
         RaycastHit hit;
         Ray forwardRay = new Ray(transform.position, transform.forward);
         Debug.DrawRay(transform.position, transform.forward);
         if (Physics.Raycast(forwardRay, out hit, 10, SphereLayerMask))
         {
+            Debug.Log("Player hit");
+
             Destroy(hit.collider.gameObject);
-            CreateBallsAndCountSingelton.Instance.AddToPointsCollected();
+            score.HitTarget();        
         }
     }
 }

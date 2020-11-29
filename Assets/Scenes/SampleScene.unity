@@ -552,6 +552,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &966608022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966608025}
+  - component: {fileID: 966608024}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966608024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966608022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb492e043e43bd948b45378a27a5bdb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointsCollected: 0
+--- !u!4 &966608025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966608022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9308708, y: 0.7470622, z: 2.6762018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970029629
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970029629}
   m_LocalRotation: {x: 0.07949339, y: -0, z: -0, w: 0.9968354}
-  m_LocalPosition: {x: 0.36, y: 3.69, z: -6.37}
+  m_LocalPosition: {x: 0, y: 3.69, z: -5.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687258585}
@@ -706,6 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f0c972fc94e2244baa80fe88c76c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
 --- !u!1 &1145444333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,6 +1497,7 @@ MonoBehaviour:
   SphereLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  score: {fileID: 966608024}
 --- !u!1 &1784144034
 GameObject:
   m_ObjectHideFlags: 0
